@@ -1,0 +1,72 @@
+:root {
+    --primary: #5B8FB9; /* Soft Aesthetic Blue */
+    --accent: #B6E2A1;  /* Soft Greenish Blue */
+    --dark: #30475E;    /* Muted Navy */
+    --white: #FFFFFF;
+    --cream: #F0F5F9;   /* Very Light Blue Tint */
+    --text-muted: #6B7280;
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Montserrat', sans-serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-cinzel: 'Cinzel', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden !important;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--dark);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+body.is-locked {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5 { line-height: 1.2; }
+.font-serif { font-family: var(--font-serif); }
+.script-font { font-family: var(--font-script); }
+.text-accent { color: var(--primary); }
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+.tracking-widest { letter-spacing: 0.2em; }
+
+/* Spacing Helpers */
+.py-section { padding: clamp(3.5rem, 10vw, 6rem) 0; }
+.py-section-lg { padding: clamp(5rem, 15vw, 10rem) 0; }
+
+@media (max-width: 576px) {
+    .container { padding-left: 24px; padding-right: 24px; }
+}
+
+/* General Grid Fixes */
+.row { --bs-gutter-x: 1.5rem; }
+
+@media (max-width: 576px) {
+    .container { padding-left: 20px; padding-right: 20px; }
+    .col-3 { width: 25%; }
+}
+
+/* Premium Shadows */
+.premium-shadow {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,42 @@
+<!-- Guestbook Section -->
+<section class="py-section bg-white" id="guestbook">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Buku Tamu</h2>
+            <div class="title-divider"></div>
+            <p class="text-muted tracking-widest">KIRIMKAN DOA & UCAPAN UNTUK AXXEL</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-container premium-shadow" data-aos="fade-up">
+                    <form id="guestbook-form">
+                        <div class="mb-4">
+                            <label class="form-label-custom">NAMA LENGKAP</label>
+                            <input type="text" id="nama" class="form-control-custom" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label-custom">UCAPAN & DOA</label>
+                            <textarea id="ucapan" rows="4" class="form-control-custom" placeholder="Berikan doa & ucapan terbaik Anda..." required></textarea>
+                        </div>
+                        <div class="row g-3 mb-5">
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="kehadiran" id="hadir" value="Hadir" checked>
+                                <label class="btn btn-check-custom w-100 py-3" for="hadir">HADIR</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="kehadiran" id="absen" value="Tidak Hadir">
+                                <label class="btn btn-check-custom w-100 py-3" for="absen">ABSEN</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-aesthetic-dark w-100 py-3 fw-bold h5">KIRIM UCAPAN</button>
+                    </form>
+
+                    <div id="ucapan-list" class="message-display mt-5 overflow-auto" style="max-height: 600px;">
+                        <!-- Render messages -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
